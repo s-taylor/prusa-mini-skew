@@ -15,7 +15,7 @@ You can test this by printing something square and using a set square, or measur
 
 There are two fixes I have found for this...
 
-* Refer [Prusa Mini Shims](https://github.com/pgooch/Prusa-Mini-Shims)
+* Refer [Prusa Mini Shims](https://github.com/pgooch/Prusa-Mini-Shims), these are the screws associated [screws](https://help.prusa3d.com/en/guide/building-your-mini_6384#6952)
 * Refer [Prusa Mini + _ Squaring X Y Axis Skew](https://www.youtube.com/watch?v=Zee6GDZ9ZEo&list=PLeLEMdcW0IhKBHVQ4vMCfjI5uVHgufpgQ&index=28)
 
 ### XZ Skew
