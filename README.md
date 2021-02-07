@@ -18,6 +18,8 @@ There are two fixes I have found for this...
 * Refer [Prusa Mini Shims](https://github.com/pgooch/Prusa-Mini-Shims), these are the [screws](https://help.prusa3d.com/en/guide/building-your-mini_6384#6952) associated.
 * Refer [Prusa Mini + _ Squaring X Y Axis Skew](https://www.youtube.com/watch?v=Zee6GDZ9ZEo&list=PLeLEMdcW0IhKBHVQ4vMCfjI5uVHgufpgQ&index=28)
 
+- - -
+
 ### XZ Skew
 
 This occurs when the horizontal arm of the printer is not parallel on the X axis with the print bed below. It is either tilting downward towards the print bed, or upwards towards the ceiling.
@@ -29,6 +31,8 @@ There are two potential causes for this...
 1. The Z axis arm is not perpendicular to the bed
 2. The X axis arm is not perpendicular to the Z axis arm (and therefore not parallel with the bed)
 3. Both
+
+- - -
 
 #### Z axis arm not perpendicular to the bed
 
