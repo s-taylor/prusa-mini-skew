@@ -27,17 +27,10 @@ This affects the first layer calibration, the left hand side of the x-axis will 
 There are two potential causes for this...
 
 1. The Z axis arm is not perpendicular to the bed
-2. The X axis arm is not perpendicular to the Z axis arm
+2. The X axis arm is not perpendicular to the Z axis arm (and therefore not parallel with the bed)
 3. Both
 
-Solving 1.
-
-Follow the steps as provided by Prusa.
-Highly recommend using Octoprint bed visualizer before and after to visualise your changes.
-
-[source](https://help.prusa3d.com/en/article/xz-axis-skew-correction-mini_158518)
-
-Solving 2.
+#### Z axis arm not perpendicular to the bed
 
 You can loosen the three screws holding the Z axis arm and adjust it to ensure it is at a 90 degree angle from the print bed. I did this by placing a small set square on my print bed, adjusting the position of the arm, then retightening the screws in the order specified.
 
@@ -49,6 +42,16 @@ There are also some mods that may help here, I have not tried these
 
 * [Prusa Mini XZ Support](https://www.prusaprinters.org/prints/40128-prusa-mini-xz-support)
 * [Prusa MINI Z-Axis Support Brace](https://www.prusaprinters.org/prints/32054-prusa-mini-z-axis-support-brace)
+
+#### X axis arm is not perpendicular to the Z axis arm
+
+Follow the steps as provided by Prusa.
+
+* Highly recommend using Octoprint bed visualizer before and after to visualise your changes, by eye this will not be accurate
+* If you loosen the belt tension screws, you should push the orange piece that holds the screws inward towards the z-axis arm, while holding the other end with your other hand. This is not mentioned in the guide, but is mentioned in a [video](https://youtu.be/Z5N9oDwrUu0) I watched and you will feel the orange piece move inward when you do this.
+
+[source](https://help.prusa3d.com/en/article/xz-axis-skew-correction-mini_158518)
+
 
 ### XY Skew
 
