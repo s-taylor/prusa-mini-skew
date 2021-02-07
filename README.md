@@ -63,7 +63,7 @@ Follow the steps as provided by Prusa.
 
 - - -
 
-### XY Skew
+### Level Bed Skew 
 
 This is the skew that occurs as your print bed moves along the Y axis, the print bed's height from the nozzle is not consitent. This will occur if your print bed itself is not perfectly level from front to back. This is best seen with octoprint bed visualizer.
 
