@@ -6,6 +6,8 @@ A compiled list of fixes for skew issues with the Prusa Mini. Storing this in gi
 
 ### XY Skew
 
+![xy-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xy-1.jpg?raw=true)
+
 This occurs when the horizontal arm of the printer is not parallel on the Y axis with the print bed below. It is either pulling forward towards the front of the printer, or backwards towards the back of the printer.
 
 This will affect if a print is square, i.e. how the lines are printed horizontally on the bed.
@@ -35,7 +37,7 @@ There are two potential causes for this...
 
 #### Z axis arm not perpendicular to the bed
 
-![xy-skew-2](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xy-2.jpg?raw=true)
+![xz-skew-2](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xz-2.jpg?raw=true)
 
 You can loosen the three screws holding the Z axis arm and adjust it to ensure it is at a 90 degree angle from the print bed. I did this by placing a small set square on my print bed, adjusting the position of the arm, then retightening the screws in the order specified. One thing that makes this a little tricky, is you will need to push the bed back underneath the x-axis arm to do this, but it then also covers one of the screws. You will just need to play around with it a bit.
 
@@ -50,7 +52,7 @@ There are also some mods that may help here, I have not tried these
 
 #### X axis arm is not perpendicular to the Z axis arm
 
-![xy-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xy-1.jpg?raw=true)
+![xz-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xz-1.jpg?raw=true)
 
 Follow the steps as provided by Prusa.
 
