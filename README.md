@@ -32,7 +32,6 @@ There are two potential causes for this...
 2. The X axis arm is not perpendicular to the Z axis arm (and therefore not parallel with the bed)
 3. Both
 
-- - -
 
 #### Z axis arm not perpendicular to the bed
 
@@ -56,6 +55,7 @@ Follow the steps as provided by Prusa.
 
 [source](https://help.prusa3d.com/en/article/xz-axis-skew-correction-mini_158518)
 
+- - -
 
 ### XY Skew
 
