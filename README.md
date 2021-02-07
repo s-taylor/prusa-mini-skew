@@ -37,7 +37,7 @@ There are two potential causes for this...
 
 ![xy-skew-2](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xy-2.jpg?raw=true)
 
-You can loosen the three screws holding the Z axis arm and adjust it to ensure it is at a 90 degree angle from the print bed. I did this by placing a small set square on my print bed, adjusting the position of the arm, then retightening the screws in the order specified.
+You can loosen the three screws holding the Z axis arm and adjust it to ensure it is at a 90 degree angle from the print bed. I did this by placing a small set square on my print bed, adjusting the position of the arm, then retightening the screws in the order specified. One thing that makes this a little tricky, is you will need to push the bed back underneath the x-axis arm to do this, but it then also covers one of the screws. You will just need to play around with it a bit.
 
 Be warned, if you try to do this purely with a level, remember that your unless your printer is sitting on a 100% perfectly level surface, you wouldn't expect your Z axis arm to be perfectly level vertically either. The set square is a good solution to this, but unfortunately you cannot tighten the main screw with the bed positioned to allow you to measure how square the arm is. A better solution is likely a digital level that can take relative measurements and find 90 degrees (relative to the bed).
 
