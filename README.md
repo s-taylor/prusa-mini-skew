@@ -2,13 +2,19 @@
 
 A compiled list of fixes for skew issues with the Prusa Mini. Storing this in github so I can continue to refine this as I make new discoveries. If you would like to contribute, please submit a PR.
 
+I have decided to remove any reference to the axis in the naming of skew. Ultimately terms like XZ skew and XY skew are confusing, and it's simpler to explain skew in terms of the problem it creates than in these terms.
+
+X axis - the horizontal arm where the print nozzle travels (left and right).
+Z axis - the vertical arm, that holds the horizontal arm (up and down).
+Y axis - the rods where the print bed travels along (forward and backward).
+
 ## Skew Fixes
 
-### XY Skew
+### Squareness Skew
 
 ![xy-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xy-1.jpg?raw=true)
 
-This occurs when the horizontal arm of the printer is not parallel on the Y axis with the print bed below. It is either pulling forward towards the front of the printer, or backwards towards the back of the printer.
+This occurs when the horizontal arm of the printer is not perpendicular (at at 90 degree angle) to the Y axis below (which the print bed travels along). It is either pulling forward towards the front of the printer, or backwards towards the back of the printer.
 
 This will affect if a print is square, i.e. how the lines are printed horizontally on the bed.
 The vertical lines should be square due to the way the bed moves along the two tracks but the horizontal lines will not be if there is XY Skew.
@@ -22,7 +28,7 @@ There are two fixes I have found for this...
 
 - - -
 
-### XZ Skew
+### Bed Level Skew Left/Right
 
 This occurs when the horizontal arm of the printer is not parallel on the X axis with the print bed below. It is either tilting downward towards the print bed, or upwards towards the ceiling.
 
@@ -63,7 +69,7 @@ Follow the steps as provided by Prusa.
 
 - - -
 
-### Level Bed Skew 
+### Bed Level Skew Forward/Backward
 
 This is the skew that occurs as your print bed moves along the Y axis, the print bed's height from the nozzle is not consitent. This will occur if your print bed itself is not perfectly level from front to back. This is best seen with octoprint bed visualizer.
 
