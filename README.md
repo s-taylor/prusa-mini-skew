@@ -97,7 +97,7 @@ If you loosen the belt tension screws, you should push the orange piece that hol
 
 Once you have made an adjustment, you should check the belt tension! See "What do you need?" above.
 
-<<The below needs updating>>
+**The below needs updating**
 
 - - -
 
