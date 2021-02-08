@@ -66,22 +66,22 @@ There are two potential causes for this...
 2. The X axis arm is not perpendicular to the Z axis arm (and therefore not parallel with the bed)
 3. Both
 
-##### Z axis arm not perpendicular to the bed
+**Solution 1 - Z axis arm not perpendicular to the bed**
 
 ![xz-skew-2](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xz-2.jpg?raw=true)
 
-You can loosen the three screws holding the Z axis arm and adjust it to ensure it is at a 90 degree angle from the print bed. I did this by placing a small set square on my print bed, adjusting the position of the arm, then retightening the screws in the order specified. Unfortunately you cannot tighten the main screw with the bed positioned to allow you to measure how square the arm is
+You can loosen the three screws holding the Z axis arm and adjust it to ensure it is at a 90 degree angle from the print bed. I did this by placing a small set square on my print bed, adjusting the position of the arm, then retightening the screws in the order specified. Unfortunately if you have the print bed positioned such that you can place a set square on it and touch the arm, you won't be able to reach the main print arm, you'll just have to keep checking it until you get it right.
 
 Another option would be a digital level e.g. Klein Tools 935DAG Digital Electronic Level. You can hold the level against the Y axis while you are tightening the screws and try and align it at 90 degrees. One thing to consider though, is unless your print bed is perfectly level and it may not be, you may want to factor in any discrepancy into how you align the Z axis.
 
-[source](https://help.prusa3d.com/en/guide/building-your-mini_177717#178546)
+Refer to Prusa's guide to see which screws need to be loosened [source](https://help.prusa3d.com/en/guide/building-your-mini_177717#178546).
 
 There are also some mods that may help here, I have not tried these
 
 * [Prusa Mini XZ Support](https://www.prusaprinters.org/prints/40128-prusa-mini-xz-support)
 * [Prusa MINI Z-Axis Support Brace](https://www.prusaprinters.org/prints/32054-prusa-mini-z-axis-support-brace)
 
-##### X axis arm is not perpendicular to the Z axis arm
+**Solution 2 - X axis arm is not perpendicular to the Z axis arm**
 
 ![xz-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xz-1.jpg?raw=true)
 
