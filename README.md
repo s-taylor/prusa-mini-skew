@@ -30,7 +30,7 @@ There are two fixes I have found for this...
 
 ### Bed Level Skew Left/Right
 
-This occurs when the horizontal arm of the printer is not parallel on the X axis with the print bed below. It is either tilting downward towards the print bed, or upwards towards the ceiling.
+This occurs when the horizontal arm of the printer is not parallel on the X axis with the print bed below. It is either tilting downward towards the print bed, or upwards towards the ceiling. As a result, your printers bed will be sloping from left to right or right to left, usually very clearly visible with Octoprint.
 
 This affects the first layer calibration, the left hand side of the x-axis will be either too close or too far away from the print bed causing a slant. This is best seen with octoprint bed visualizer, and can be easily tweaked by following the instructions below. A small amount of skew should not cause issues as the printer can correct with mesh bed leveling.
 
