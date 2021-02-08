@@ -52,6 +52,8 @@ This affects the first layer calibration, the left hand side of the x-axis will 
 
 If you follow the Prusa solution below, they suggest simply moving the print head from one side to the other and visually checking the height from the bed. In all honestly, I think that is a waste of time as it will never be anything close to accurate. I highly recommend setting up a Raspberry Pi with Octoprint and the Bed Visualiser plugin.
 
+I also highly recommend that you should have a mechanism to measure belt tension (for Solution 2 below). Without this, you will be completely in the dark as to how tight your x-axis belt is, and if you are messing with those screws, you would want to know. This is what I [recommend](https://www.prusaprinters.org/prints/46639-tension-meter-for-the-gt2-belts-of-i3-mk3s-or-prus), it's very good. I verified its accuracy on my friends MK3S, which can give you a belt tension reading which I then compared to the meter.
+
 #### Measuring
 
 As above, I suggest running the Bed Visualiser plugin on Octoprint. This makes it very clear to see if you have an issue or not. This is a [good example](https://forum.prusaprinters.org/wp-content/uploads/2021/02/5DB11A81-76E6-4A66-B461-33506FFDEC8C.jpeg) of what to look for. Once you have run the visualiser you will know whether the arm needs to move up or down. Ensure you turn on "Descending y axis" if you are looking at the "Current Mesh Data", this orientates the data as it would be if you are looking at your printer from the front.
@@ -85,12 +87,17 @@ There are also some mods that may help here, I have not tried these
 
 ![xz-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xz-1.jpg?raw=true)
 
-Follow the steps as provided by Prusa.
+Follow [the steps as provided by Prusa](https://help.prusa3d.com/en/article/xz-axis-skew-correction-mini_158518).
 
-* Highly recommend using Octoprint bed visualizer before and after to visualise your changes, by eye this will not be accurate
-* If you loosen the belt tension screws, you should push the orange piece that holds the screws inward towards the z-axis arm, while holding the other end with your other hand. This is not mentioned in the guide, but is mentioned in a [video](https://youtu.be/Z5N9oDwrUu0) I watched and you will feel the orange piece move inward when you do this.
+Remember, if you tighten the lower screw, this moves the arm upwards, towards the ceiling.
+If you tighten the upper screw, this moves the arm downwards, towards the bed.
+This is counterintuitive, so it's worth mentioning.
 
-[source](https://help.prusa3d.com/en/article/xz-axis-skew-correction-mini_158518)
+If you loosen the belt tension screws, you should push the orange piece that holds the screws inward towards the z-axis arm, while holding the other end with your other hand. This is not mentioned in the Prusa's, but is mentioned in a [video](https://youtu.be/Z5N9oDwrUu0) I watched and you will feel the orange piece move inward when you do this. Otherwise loosening the screws may not have an effect.
+
+Once you have made an adjustment, you should check the belt tension! See "What do you need?" above.
+
+<<The below needs updating>>
 
 - - -
 
