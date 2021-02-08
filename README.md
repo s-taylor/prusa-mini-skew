@@ -29,7 +29,7 @@ A line of filament printed from the front to back (or back to front) will be una
 
 **Measuring**
 
-You can test this by printing something square and using a set square to look for any gaps, or measuring corner to corner and comparing the values i.e. with calipers.
+You can test this by printing [something square](https://www.thingiverse.com/thing:4140075) and then either using a set square to check if all 4 corners are square, looking for any visible gaps. OR if you have calipers, you can measure corner to corner inside the square (both diagonals) and compare the values. If it is perfectly square, the values will be the same.
 
 **Fixes**
 
@@ -40,9 +40,25 @@ You can test this by printing something square and using a set square to look fo
 
 ### Bed Level Skew Left/Right
 
-This occurs when the horizontal arm of the printer is not parallel on the X axis with the print bed below. It is either tilting downward towards the print bed, or upwards towards the ceiling. As a result, your printers bed will be sloping from left to right or right to left, usually very clearly visible with Octoprint.
+**What is it?**
 
-This affects the first layer calibration, the left hand side of the x-axis will be either too close or too far away from the print bed causing a slant. This is best seen with octoprint bed visualizer, and can be easily tweaked by following the instructions below. A small amount of skew should not cause issues as the printer can correct with mesh bed leveling.
+This occurs when the horizontal arm of the printer is not parallel on the X axis with the print bed below. It is either tilting downward towards the print bed, or upwards towards the ceiling. As a result, your printers bed will be sloping from left to right or right to left.
+
+**Issue**
+
+This affects the first layer calibration, the left hand side of the x-axis will be either too close or too far away from the print bed causing a slant. The printer can only compensate for an uneven bed so much, so depending on how severe the slant is, it may or may not affect your prints.
+
+**What do you need?**
+
+If you follow the Prusa solution below, they suggest simply moving the print head from one side to the other and visually checking the height from the bed. In all honestly, I think that is a waste of time as it will never be anything close to accurate. I highly recommend setting up a Raspberry Pi with Octoprint and the Bed Visualiser plugin.
+
+**Measuring**
+
+As above, I suggest running the Bed Visualiser plugin on Octoprint. This makes it very clear to see if you have an issue or not. This is a [good example](https://forum.prusaprinters.org/wp-content/uploads/2021/02/5DB11A81-76E6-4A66-B461-33506FFDEC8C.jpeg) of what to look for. Once you have run the visualiser you will know whether the arm needs to move up or down. Ensure you turn on "Descending y axis" if you are looking at the "Current Mesh Data", this orientates the data as it would be if you are looking at your printer from the front.
+
+Do not worry about any dips or raised areas you see in the corners when running the visualiser, there is a separate fix required for this. The aim here is just to get it as level as possible from left to right.
+
+**Fixes**
 
 There are two potential causes for this...
 
@@ -50,6 +66,7 @@ There are two potential causes for this...
 2. The X axis arm is not perpendicular to the Z axis arm (and therefore not parallel with the bed)
 3. Both
 
+... more updates required ...
 
 #### Z axis arm not perpendicular to the bed
 
