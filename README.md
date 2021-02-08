@@ -14,14 +14,24 @@ I have decided to remove any reference to the axis in the naming of skew. Ultima
 
 ![xy-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xy-1.jpg?raw=true)
 
+**What is it?**
+
 This occurs when the horizontal arm of the printer is not perpendicular (at at 90 degree angle) to the Y axis below (which the print bed travels along). It is either pulling forward towards the front of the printer, or backwards towards the back of the printer.
+
+**Issue**
 
 This will affect if a print is square, specifically how a line of filament is printed from right to left (or left to right) on the bed.
 A line of filament printed from the front to back (or back to front) will be unaffected as this is reliant on the Y-axis.
 
+**What do you need?**
+
+* Calipers for most accuracy OR a set square
+
+**Measuring**
+
 You can test this by printing something square and using a set square to look for any gaps, or measuring corner to corner and comparing the values i.e. with calipers.
 
-There are two fixes I have found for this...
+**Fixes**
 
 * Refer [Prusa Mini Shims](https://github.com/pgooch/Prusa-Mini-Shims), these are the [screws](https://help.prusa3d.com/en/guide/building-your-mini_6384#6952) you'll need to unscrew to install the shim.
 * Refer [Prusa Mini + _ Squaring X Y Axis Skew](https://www.youtube.com/watch?v=Zee6GDZ9ZEo&list=PLeLEMdcW0IhKBHVQ4vMCfjI5uVHgufpgQ&index=28).
