@@ -58,7 +58,7 @@ I also highly recommend that you should have a mechanism to measure belt tension
 
 #### Measuring
 
-As above, I suggest running the Bed Visualiser plugin on Octoprint. This makes it very clear to see if you have an issue or not. This is a [good example](https://forum.prusaprinters.org/wp-content/uploads/2021/02/5DB11A81-76E6-4A66-B461-33506FFDEC8C.jpeg) of what to look for. Once you have run the visualiser you will know whether the arm needs to move up or down. Ensure you turn on "Descending y axis" if you are looking at the "Current Mesh Data", this orientates the data as it would be if you are looking at your printer from the front.
+As above, I suggest running the Bed Visualiser plugin on Octoprint. This makes it very clear to see if you have an issue or not. This is a [good example](https://forum.prusaprinters.org/wp-content/uploads/2021/02/5DB11A81-76E6-4A66-B461-33506FFDEC8C.jpeg) of what to look for, in this case you'd need to lower the arm, by tightening the top screw. Once you have run the visualiser you will know whether the arm needs to move up or down. Ensure you turn on "Descending y axis" if you are looking at the "Current Mesh Data", this orientates the data as it would be if you are looking at your printer from the front.
 
 Do not worry about any dips or raised areas you see in the corners when running the visualiser, there is a separate fix required for this. The aim here is just to get it as level as possible from left to right.
 
