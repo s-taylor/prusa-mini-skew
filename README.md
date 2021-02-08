@@ -4,9 +4,9 @@ A compiled list of fixes for skew issues with the Prusa Mini. Storing this in gi
 
 I have decided to remove any reference to the axis in the naming of skew. Ultimately terms like XZ skew and XY skew are confusing, and it's simpler to explain skew in terms of the problem it creates than in these terms.
 
-X axis - the horizontal arm where the print nozzle travels (left and right).
-Z axis - the vertical arm, that holds the horizontal arm (up and down).
-Y axis - the rods where the print bed travels along (forward and backward).
+* X axis - the horizontal arm where the print nozzle travels (left and right).
+* Z axis - the vertical arm, that holds the horizontal arm (up and down).
+* Y axis - the rods where the print bed travels along (forward and backward).
 
 ## Skew Fixes
 
