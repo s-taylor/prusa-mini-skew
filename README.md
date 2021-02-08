@@ -14,24 +14,24 @@ I have decided to remove any reference to the axis in the naming of skew. Ultima
 
 ![xy-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xy-1.jpg?raw=true)
 
-**What is it?**
+#### What is it?
 
 This occurs when the horizontal arm of the printer is not perpendicular (at at 90 degree angle) to the Y axis below (which the print bed travels along). It is either pulling forward towards the front of the printer, or backwards towards the back of the printer.
 
-**Issue**
+#### Issue
 
 This will affect if a print is square, specifically how a line of filament is printed from right to left (or left to right) on the bed.
 A line of filament printed from the front to back (or back to front) will be unaffected as this is reliant on the Y-axis.
 
-**What do you need?**
+#### What do you need?
 
 * Calipers for most accuracy OR a set square
 
-**Measuring**
+#### Measuring
 
 You can test this by printing [something square](https://www.thingiverse.com/thing:4140075) and then either using a set square to check if all 4 corners are square, looking for any visible gaps. OR if you have calipers, you can measure corner to corner inside the square (both diagonals) and compare the values. If it is perfectly square, the values will be the same.
 
-**Fixes**
+#### Fixes
 
 * Refer [Prusa Mini Shims](https://github.com/pgooch/Prusa-Mini-Shims), these are the [screws](https://help.prusa3d.com/en/guide/building-your-mini_6384#6952) you'll need to unscrew to install the shim.
 * Refer [Prusa Mini + _ Squaring X Y Axis Skew](https://www.youtube.com/watch?v=Zee6GDZ9ZEo&list=PLeLEMdcW0IhKBHVQ4vMCfjI5uVHgufpgQ&index=28).
@@ -40,25 +40,25 @@ You can test this by printing [something square](https://www.thingiverse.com/thi
 
 ### Bed Level Skew Left/Right
 
-**What is it?**
+#### What is it?
 
 This occurs when the horizontal arm of the printer is not parallel on the X axis with the print bed below. It is either tilting downward towards the print bed, or upwards towards the ceiling. As a result, your printers bed will be sloping from left to right or right to left.
 
-**Issue**
+#### Issue
 
 This affects the first layer calibration, the left hand side of the x-axis will be either too close or too far away from the print bed causing a slant. The printer can only compensate for an uneven bed so much, so depending on how severe the slant is, it may or may not affect your prints.
 
-**What do you need?**
+#### What do you need?
 
 If you follow the Prusa solution below, they suggest simply moving the print head from one side to the other and visually checking the height from the bed. In all honestly, I think that is a waste of time as it will never be anything close to accurate. I highly recommend setting up a Raspberry Pi with Octoprint and the Bed Visualiser plugin.
 
-**Measuring**
+#### Measuring
 
 As above, I suggest running the Bed Visualiser plugin on Octoprint. This makes it very clear to see if you have an issue or not. This is a [good example](https://forum.prusaprinters.org/wp-content/uploads/2021/02/5DB11A81-76E6-4A66-B461-33506FFDEC8C.jpeg) of what to look for. Once you have run the visualiser you will know whether the arm needs to move up or down. Ensure you turn on "Descending y axis" if you are looking at the "Current Mesh Data", this orientates the data as it would be if you are looking at your printer from the front.
 
 Do not worry about any dips or raised areas you see in the corners when running the visualiser, there is a separate fix required for this. The aim here is just to get it as level as possible from left to right.
 
-**Fixes**
+#### Fixes
 
 There are two potential causes for this...
 
@@ -66,15 +66,13 @@ There are two potential causes for this...
 2. The X axis arm is not perpendicular to the Z axis arm (and therefore not parallel with the bed)
 3. Both
 
-... more updates required ...
-
-#### Z axis arm not perpendicular to the bed
+##### Z axis arm not perpendicular to the bed
 
 ![xz-skew-2](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xz-2.jpg?raw=true)
 
-You can loosen the three screws holding the Z axis arm and adjust it to ensure it is at a 90 degree angle from the print bed. I did this by placing a small set square on my print bed, adjusting the position of the arm, then retightening the screws in the order specified. One thing that makes this a little tricky, is you will need to push the bed back underneath the x-axis arm to do this, but it then also covers one of the screws. You will just need to play around with it a bit.
+You can loosen the three screws holding the Z axis arm and adjust it to ensure it is at a 90 degree angle from the print bed. I did this by placing a small set square on my print bed, adjusting the position of the arm, then retightening the screws in the order specified. Unfortunately you cannot tighten the main screw with the bed positioned to allow you to measure how square the arm is
 
-Be warned, if you try to do this purely with a level, remember that your unless your printer is sitting on a 100% perfectly level surface, you wouldn't expect your Z axis arm to be perfectly level vertically either. The set square is a good solution to this, but unfortunately you cannot tighten the main screw with the bed positioned to allow you to measure how square the arm is. A better solution is likely a digital level that can take relative measurements and find 90 degrees (relative to the bed).
+Another option would be a digital level e.g. Klein Tools 935DAG Digital Electronic Level. You can hold the level against the Y axis while you are tightening the screws and try and align it at 90 degrees. One thing to consider though, is unless your print bed is perfectly level and it may not be, you may want to factor in any discrepancy into how you align the Z axis.
 
 [source](https://help.prusa3d.com/en/guide/building-your-mini_177717#178546)
 
@@ -83,7 +81,7 @@ There are also some mods that may help here, I have not tried these
 * [Prusa Mini XZ Support](https://www.prusaprinters.org/prints/40128-prusa-mini-xz-support)
 * [Prusa MINI Z-Axis Support Brace](https://www.prusaprinters.org/prints/32054-prusa-mini-z-axis-support-brace)
 
-#### X axis arm is not perpendicular to the Z axis arm
+##### X axis arm is not perpendicular to the Z axis arm
 
 ![xz-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xz-1.jpg?raw=true)
 
