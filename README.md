@@ -16,10 +16,10 @@ I have decided to remove any reference to the axis in the naming of skew. Ultima
 
 This occurs when the horizontal arm of the printer is not perpendicular (at at 90 degree angle) to the Y axis below (which the print bed travels along). It is either pulling forward towards the front of the printer, or backwards towards the back of the printer.
 
-This will affect if a print is square, i.e. how the lines are printed horizontally on the bed.
-The vertical lines should be square due to the way the bed moves along the two tracks but the horizontal lines will not be if there is XY Skew.
+This will affect if a print is square, specifically how a line of filament is printed from right to left (or left to right) on the bed.
+A line of filament printed from the front to back (or back to front) will be unaffected as this is reliant on the Y-axis.
 
-You can test this by printing something square and using a set square, or measuring corner to corner and comparing the values.
+You can test this by printing something square and using a set square to look for any gaps, or measuring corner to corner and comparing the values i.e. with calipers.
 
 There are two fixes I have found for this...
 
