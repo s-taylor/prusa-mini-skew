@@ -142,4 +142,4 @@ One caveat with this fix though, is this "may" affect your print bed temperature
 
 **Solution 2 - Silicone Mod**
 
-So what is the ulatimate solution? It's [this](https://github.com/bbbenji/PMSBLM) and while it is the perfect solution it's also pretty involved and requires a lot of care to execute.
+So what is the ultimate solution? It's [this](https://github.com/bbbenji/PMSBLM) and while it is the perfect solution it's also pretty involved and requires a lot of care to execute.
