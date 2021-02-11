@@ -95,6 +95,8 @@ Remember, if you tighten the lower screw, this moves the arm upwards, towards th
 If you tighten the upper screw, this moves the arm downwards, towards the bed.
 This is counterintuitive, so it's worth mentioning.
 
+Once you have made the adjustments, check that both of the horizontal bars are straight and not twisted. Look at your printer from the top and check the two bars are perfectly aligned. If you need to adjust turn the orange piece with the screws a little to correct. If they are not aligned your print nozzle will turn slightly as it moves along the x-axis.
+
 If you loosen the belt tension screws, you should push the orange piece that holds the screws inward towards the z-axis arm, while holding the other end with your other hand. This is not mentioned in the Prusa's, but is mentioned in a [video](https://youtu.be/Z5N9oDwrUu0) I watched and you will feel the orange piece move inward when you do this. Otherwise loosening the screws may not have an effect.
 
 Once you have made an adjustment, you should check the belt tension! See "What do you need?" above.
@@ -103,16 +105,41 @@ Once you have made an adjustment, you should check the belt tension! See "What d
 
 - - -
 
-### Bed Level Skew Forward/Backward
+### Bed Level Skew Front/Back
 
-This is the skew that occurs as your print bed moves along the Y axis, the print bed's height from the nozzle is not consitent. This will occur if your print bed itself is not perfectly level from front to back. This is best seen with octoprint bed visualizer.
+TBC
 
-Unfortunately there is no simple fix for this.
+- - -
 
-If both front or both back corners are dipped, it might be possible that the Z axis arm is tilted slightly forward or slightly backward (that's pure speculation though I'm unsure if this can happen).
+### Bed Level Skew Corners
 
-If one corner is dipped and one is raised (on the front or the back) there is no quick fix. In my case my front right and my back left corner were both dipped, which is not easily fixable. 
+#### What is it?
 
-Someone recommended to me to perhaps try the [masking tape mod](https://forum.prusaprinters.org/forum/user-mods-octoprint-enclosures-nozzles/prusa-mini-silicone-bed-leveling-mod/paged/9/#post-336934). This was actually an incredibly quick and easy way to level the print bed at a very low cost. Using octoprint each time I made an adjustment I focused on getting the front left and back left corners the same height, and likewise with the front right and rear right. I then leveled the bed almost completely using the [XZ skew adjustments by Prusa](https://help.prusa3d.com/en/article/xz-axis-skew-correction-mini_158518). Unfortunately I quickly realised why this method is not a good idea, in one area where I had three layers of tape the plastic would not adhere to the steel sheet because the masking tape was insulating the heat. Because of this, I cannot recommend this mod.
+This is the skew that occurs when your print bed is not level. With the "Bed Level Skew" fixes above, you should be able to achieve a level bed from left to right in the very center of the print bed (or at any single point on the Y-axis). However the print bed itself may not be consistently level from front to back and as it moves backward and forward on the Y-axis, the level changes.
 
-So what is the solution? It's [this](https://github.com/bbbenji/PMSBLM) and while it is the perfect solution it's also pretty involved and requires a lot of care to execute.
+In my particular case, my print bed actually droops in the front left and back right corners. So I can get it near perfectly level in the middle of the bed, but as the bed moves forward or backwards it is no longer level.
+
+#### Issue
+
+Depending on the severity this may or may not cause you issues. The Prusa Mini (and MK3) both have auto bed leveling, which detects any variance in your print bed, and accomodates this by raising or lowering the nozzle height accordingly in those areas. However if the variance is too high, your printer may not be able to compensate for these differences. The other potential issue, is although the nozzle compensates for an uneven bed, the bottom surface of your print will follow the contours of your bed.
+
+#### Measuring
+
+Your only option here is Octoprint with the Bed Visualiser plugin, this makes it very clear how level your bed is.
+Before going any further you should decide if this is worth the effort. If your differences are small I honestly don't think you should worry about it.
+
+How small is acceptable? I'm not sure I can answer that. I feel like I read up to 0.5mm but don't quote me on that.
+In my case my front right corner was -0.16mm and my front right corner was +0.38mm, so just over a 0.5mm slope.
+I can't say I can definitively attribute any issues I've had to my print bed, but I decided I wanted it as level as possible as that's the kind of perfectionist I am.
+
+#### Fixes
+
+**Solution 1 - Masking Tape Mod**
+
+Someone recommended to me to perhaps try the [masking tape mod](https://forum.prusaprinters.org/forum/user-mods-octoprint-enclosures-nozzles/prusa-mini-silicone-bed-leveling-mod/paged/9/#post-336934). This was actually an incredibly quick and easy way to level the print bed at a very low cost. Using octoprint each time I made an adjustment I focused on getting the front left and back left corners the same height, and likewise with the front right and rear right. I then leveled the bed almost completely using the [XZ skew adjustments by Prusa](https://help.prusa3d.com/en/article/xz-axis-skew-correction-mini_158518). 
+
+One caveat with this fix though, is this "may" affect your print bed temperature as the masking tape will insulate the heatbed from the steel sheet. If you are printing PLA that should not affect your first layer, as you can technically print on a cold bed (I believe), but it may cause warping if your bed is not evenly heated. It's hard to say if this is an issue and probably depends on how much masking tape you use and where you put it. You'll need to experiment for yourself.
+
+**Solution 2 - Silicone Mod**
+
+So what is the ulatimate solution? It's [this](https://github.com/bbbenji/PMSBLM) and while it is the perfect solution it's also pretty involved and requires a lot of care to execute.
