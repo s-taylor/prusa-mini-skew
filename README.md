@@ -1,6 +1,6 @@
 # Prusa Mini Skew
 
-A compiled list of fixes for skew issues with the Prusa Mini. Storing this in github so I can continue to refine this as I make new discoveries. If you would like to contribute, please submit a PR.
+A compiled list of fixes for skew issues with the Prusa Mini. Storing this in github so I can continue to refine this as I make new discoveries. If you would like to contribute, please submit a PR. If this was helpful to you and you want to say thanks, please star the repo.
 
 I have decided to remove any reference to the axis in the naming of skew. Ultimately terms like XZ skew and XY skew are confusing, and it's simpler to explain skew in terms of the problem it creates than in these terms.
 
@@ -14,7 +14,7 @@ The [original thread](https://forum.prusaprinters.org/forum/hardware-firmware-an
 
 ### Squareness Skew
 
-![xy-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xy-1.jpg?raw=true)
+![squareness-skew](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/squareness-skew.jpg?raw=true)
 
 #### What is it?
 
@@ -72,7 +72,7 @@ There are two potential causes for this...
 
 **Solution 1 - Z axis arm not perpendicular to the bed**
 
-![xz-skew-2](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xz-2.jpg?raw=true)
+![skew-left-right-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/skew-left-right-1.jpg?raw=true)
 
 You can loosen the three screws holding the Z axis arm and adjust it to ensure it is at a 90 degree angle from the print bed. I did this by placing a small set square on my print bed, adjusting the position of the arm, then retightening the screws in the order specified. Unfortunately if you have the print bed positioned such that you can place a set square on it and touch the arm, you won't be able to reach the main print arm, you'll just have to keep checking it until you get it right.
 
@@ -87,7 +87,7 @@ There are also some mods that may help here, I have not tried these
 
 **Solution 2 - X axis arm is not perpendicular to the Z axis arm**
 
-![xz-skew-1](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/printer-skew-xz-1.jpg?raw=true)
+![skew-left-right-2](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/skew-left-right-2.jpg?raw=true)
 
 Follow [the steps as provided by Prusa](https://help.prusa3d.com/en/article/xz-axis-skew-correction-mini_158518).
 
@@ -101,23 +101,17 @@ If you loosen the belt tension screws, you should push the orange piece that hol
 
 Once you have made an adjustment, you should check the belt tension! See "What do you need?" above.
 
-**The below needs updating**
-
-- - -
-
-### Bed Level Skew Front/Back
-
-TBC
-
 - - -
 
 ### Bed Level Skew Corners
+
+![bed-level-skew-corners](https://github.com/s-taylor/prusa-mini-skew/blob/main/assets/bed-level-skew-corners.png?raw=true)
 
 #### What is it?
 
 This is the skew that occurs when your print bed is not level. With the "Bed Level Skew" fixes above, you should be able to achieve a level bed from left to right in the very center of the print bed (or at any single point on the Y-axis). However the print bed itself may not be consistently level from front to back and as it moves backward and forward on the Y-axis, the level changes.
 
-In my particular case, my print bed actually droops in the front left and back right corners. So I can get it near perfectly level in the middle of the bed, but as the bed moves forward or backwards it is no longer level.
+In my particular case, my print bed actually droops in the front right and back left corners, and is elevated in the back right corner.  As the bed moves forward or backwards the level will change since the leveling is not consistent.
 
 #### Issue
 
@@ -128,7 +122,7 @@ Depending on the severity this may or may not cause you issues. The Prusa Mini (
 Your only option here is Octoprint with the Bed Visualiser plugin, this makes it very clear how level your bed is.
 Before going any further you should decide if this is worth the effort. If your differences are small I honestly don't think you should worry about it.
 
-How small is acceptable? I'm not sure I can answer that. I feel like I read up to 0.5mm but don't quote me on that.
+How small is acceptable? I'm not sure I can answer that. I feel like I read somewhere up to 0.5mm from corner to corner is acceptable, but don't quote me on that.
 In my case my front right corner was -0.16mm and my front right corner was +0.38mm, so just over a 0.5mm slope.
 I can't say I can definitively attribute any issues I've had to my print bed, but I decided I wanted it as level as possible as that's the kind of perfectionist I am.
 
