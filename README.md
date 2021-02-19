@@ -37,7 +37,7 @@ You can test this by printing [something square](https://www.thingiverse.com/thi
 
 * Refer [Prusa Mini Shims](https://github.com/pgooch/Prusa-Mini-Shims), these are the [screws](https://help.prusa3d.com/en/guide/building-your-mini_6384#6952) you'll need to unscrew to install the shim.
 * Refer [Prusa Mini + _ Squaring X Y Axis Skew](https://www.youtube.com/watch?v=Zee6GDZ9ZEo&list=PLeLEMdcW0IhKBHVQ4vMCfjI5uVHgufpgQ&index=28).
-* Refer [goskew](https://github.com/Kranex/goskew)
+* Refer [goskew](https://github.com/Kranex/goskew), this will post process your gcodes and account for skew in your printer.
 
 - - -
 
